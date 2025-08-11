@@ -1,0 +1,39 @@
+# want to ignore big files (netcdf files, figures, etc)
+
+# ignore netcdf files
+# note: needed this to remove nc file from commit history and 
+# stop tracking it:
+# https://stackoverflow.com/questions/25458306/git-rm-fatal-pathspec-did-not-match-any-files
+
+*.b
+*.nc
+*.nc*
+*.nc_*
+*.nc\.*
+*.png
+*.png\.*
+*.mp4
+*.mp4\.*
+*.mat
+*.mat\.*
+*.p
+*.p\.*
+*slurm-*.out
+*.npz
+*.npz*
+*.npz_*
+*.npz\.*
+*.driftlog*
+*.driftlog
+*.log*
+*.log
+*.pyc
+*.pyc*
+*.jpg
+*.jpg*
+*.jpg\.*
+*.swp
+*.out
+*.out*
+*.zarr
+*.zarr*
