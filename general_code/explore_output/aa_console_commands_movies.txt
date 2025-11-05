@@ -1,0 +1,7 @@
+
+# TO MAKE FROM PNG FILES:
+ffmpeg -framerate 1 -r 1 -i /home/blaughli/parcels/general_code/explore_output/z_movie_frames_try1/figure_%02d.png -pix_fmt yuv420p -profile:v high -level:v 4.1 -crf:v 20 -movflags +faststart output.mp4
+
+# TO RUN:
+xdg-open output.mp4
+

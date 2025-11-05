@@ -1,0 +1,28 @@
+cell #, tick label
+129, La Jolla: 129
+163, Dana Pt.: 163
+192, Palos Verdes: 192
+213, Point Dume: 213
+256, Campus Pt.: 256
+277, Pt. Concpt.: 277
+381, Pt. Sur: 381
+394, Cyprus Pt.: 394
+422, Ano Nuevo: 422
+453, Pedro Pt.: 453
+485, Pt. Reyes: 485
+539, Pt. Arena: 539
+610, Cape Mendo.: 610
+717, Cape Blanco: 717
+777, Cape Perpetua: 777
+786, Newport: 786
+860, Columbia River: 860
+1010, N. San Miguel: 1010
+1000, N. Santa Rosa: 1000
+993, N. Santa Cruz: 993
+972, S. Santa Cruz: 972
+954, S. Santa Rosa: 954
+941, S. San Miguel: 941
+1015, N. Catalina: 1015
+1031, S. Catalina: 1031
+1047, N. San Clemente: 1047
+1062, S. San Clemente: 1062

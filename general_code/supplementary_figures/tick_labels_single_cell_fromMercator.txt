@@ -1,0 +1,25 @@
+cell #, tick label
+032, Ensenada: 32
+050, La Jolla: 50
+076, Palos Verdes: 76
+091, Pt. Mugu: 91
+110, Pt. Concpt.: 110
+127, Morro Bay: 127
+149, Pt. Sur: 149
+161, Moss Land.: 161
+169, Ano Nuevo: 169
+181, Golden Gate: 181
+187, Pt. Reyes: 187
+194, Bodega Head: 194
+207, Pt. Arena: 207
+235, Cape Mendo.: 235
+273, Cape Blanco: 273
+323, Columbia River: 323
+365, Salish Sea: 365
+391, Tofino: 391
+443, N. Santa Rosa: 443
+447, N. Santa Cruz: 447
+455, S. Santa Cruz: 455
+464, S. Santa Rosa: 464
+469, N. San Clemente: 469
+475, S. San Clemente: 475
