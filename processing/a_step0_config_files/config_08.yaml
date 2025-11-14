@@ -1,0 +1,58 @@
+versionDetail:
+    deleteNearBoundaries_v1
+polygonFile:
+    /home/blaughli/parcels/general_code/polygons_and_seeding/z_output/bounding_boxes_lonlat_WCR30_singleCoastalCells_withPeteAdditions.txt
+gridFile:
+    /home/blaughli/tracking_project_v2/grid_data/wcr30test1_grd.nc
+parcelsOutputParentDir:
+    /home/cedwards/projects/parcels/run_wcr30_v2/output_keepers/
+parcelsLogParentDir:
+   /home/cedwards/projects/parcels/run_wcr30_v2/logs
+connectivityCommonGrandparentDir:
+   /home/blaughli/parcels/processing/a_step1_binning/z_binned_settlement_counts_allPLDsAtOnce_10filesPerNode/
+connectivityLocalDirPreamble:
+    binned_data_
+DomainGridCellBorderBuffer:
+    5
+trackingFileNumTimestepsExpected:
+    4320
+numFilesPerNode:
+    10
+numCoresStep2:
+    24
+pldStartDays:
+    - 1
+    - 5
+    - 10
+    - 15
+    - 30
+    - 45
+    - 60
+    - 75 
+    - 90 
+    - 120
+    - 150
+pldEndDays:
+    - 5
+    - 10
+    - 15
+    - 30
+    - 45
+    - 60
+    - 75
+    - 90
+    - 120
+    - 150
+    - 180
+yearsStart:
+    - 1999
+    - 1999
+    - 2005
+    - 2013
+    - 2018
+yearsEnd:
+    - 2024
+    - 2005
+    - 2012
+    - 2017
+    - 2024

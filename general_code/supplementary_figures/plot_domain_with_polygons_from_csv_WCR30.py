@@ -6,9 +6,25 @@ import os
 from pathlib import Path
 import netCDF4
 
-tick_label_csv_file_path = "/home/blaughli/parcels/general_code/supplementary_figures/tick_labels_single_cell_WCR30_v1_originalCells.txt"
-polygon_file_path = "/home/blaughli/parcels/general_code/polygons_and_seeding/z_input_files/bounding_boxes_lonlat_WCR30_singleCoastalCells.txt"
 grid_file_plot = "/home/blaughli/tracking_project_v2/grid_data/wcr30test1_grd.nc"
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------
+polygon_file_path = "/home/blaughli/parcels/general_code/polygons_and_seeding/z_output/ROMS_ParentCellsOnly_WGS84.txt"
+tick_label_csv_file_path = "/home/blaughli/parcels/general_code/supplementary_figures/z_input/tick_labels_single_cell_WCR30_ROMS_ParentCellsOnly_WGS84.txt"
+ticks_to_ignore_full_domain = [80,111,122,146,217,225,249,253,271,410,489,492,497,506,512,526,534,546]
+ticks_to_ignore_scb = [122,146,489,497,503,512]
+ticks_to_ignore_central = [249,253]
+ticks_to_ignore_north = []
+
+'''
+polygon_file_path = "/home/blaughli/parcels/general_code/polygons_and_seeding/z_input_files/bounding_boxes_lonlat_WCR30_singleCoastalCells.txt"
+tick_label_csv_file_path = "/home/blaughli/parcels/general_code/supplementary_figures/tick_labels_single_cell_WCR30_v1_originalCells.txt"
+ticks_to_ignore_full_domain = [129,192,403,458,499,941,973,993,972,1010,1015,1031,1047,1062]
+'''
+
+
+ticks_to_ignore_list_of_lists = [ticks_to_ignore_full_domain, ticks_to_ignore_scb, ticks_to_ignore_central, ticks_to_ignore_north]
+# ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 parser = argparse.ArgumentParser()
 parser.add_argument("regionindex",type=int)
@@ -75,20 +91,6 @@ lon_max_list = [-116, -116.8, -121, -122.5]
 lat_min_list = [31, 32.5, 35.5, 45.5]
 lat_max_list = [52, 34.75, 39.5, 51.5]
 
-#ticks_to_ignore_full_domain = [-1,91,161,194,181,392]
-#ticks_to_ignore_scb = [392, tick_positions[-1]+10]
-#ticks_to_ignore_central = [0,1000]
-#ticks_to_ignore_north = [0,1000]
-
-ticks_to_ignore_full_domain = [129,192,403,458,499,941,973,993,972,1010,1015,1031,1047,1062]
-ticks_to_ignore_scb = []
-#ticks_to_ignore_scb = [392, tick_positions[-1]+10]
-ticks_to_ignore_central = []
-#ticks_to_ignore_central = [0,1000]
-ticks_to_ignore_north = []
-#ticks_to_ignore_north = [0,1000]
-
-ticks_to_ignore_list_of_lists = [ticks_to_ignore_full_domain, ticks_to_ignore_scb, ticks_to_ignore_central, ticks_to_ignore_north]
    
 
 plot_title_pre = "WCR30 coastal cells v1"
@@ -118,9 +120,6 @@ special_labels_dict[129]["arrowprops"] = arrow_props_full_domain
 special_labels_dict[192] = {}
 special_labels_dict[192]["xytext"] = (-0.4 * offset, 0.0 * offset)
 special_labels_dict[192]["arrowprops"] = arrow_props_full_domain
-#special_labels_dict[280] = {}
-#special_labels_dict[280]["xytext"] = (-0.4 * offset, 0.1 * offset)
-#special_labels_dict[280]["arrowprops"] = arrow_props_full_domain
 special_labels_dict[954] = {}
 special_labels_dict[954]["xytext"] = (-0.5 * offset, -0.1 * offset)
 special_labels_dict[954]["arrowprops"] = arrow_props_full_domain
